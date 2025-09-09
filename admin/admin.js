@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://artist-website-huey.onrender.com";
 let token = null;
 const loginForm = document.getElementById("login-form");
 const adminPanel = document.getElementById("admin-panel");
