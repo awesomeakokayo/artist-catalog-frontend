@@ -1,4 +1,4 @@
- const API_BASE = "http://localhost:8000"; // change to deployed url
+ const API_BASE = "https://artist-website-huey.onrender.com"; 
  async function fetchCatalogs(){
     const res = await fetch(`${API_BASE}/catalogs/`);
     if(!res.ok) return console.error('failed to fetch');
