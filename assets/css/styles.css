@@ -98,7 +98,7 @@
    justify-content: center;
 }
 .track{
-   font-size: 2.5em;
+   font-size: 2em;
    font-weight: 700;
    font-style: bold;
    text-decoration: none;
@@ -118,7 +118,7 @@
    background: inherit;
    border: 1px solid white;
    color: white;
-   font-size: 2em;
+   font-size: 1.5em;
    font-weight: 400;
    text-decoration: none;
    cursor: pointer;
@@ -170,7 +170,7 @@ footer{
 }
 .email-terms{
    width: 100%;
-   height: 70px;
+   height: 60px;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -181,7 +181,7 @@ footer{
    flex-direction: row;
    align-items: flex-start;
    width: 447px;
-   font-size: 14px;
+   font-size: 12px;
    font-style: bold;
    font-weight: 700;
    height: 100%;
@@ -224,6 +224,7 @@ input::placeholder{
   font-size: 14px;
   position: absolute;
   top: 0;
+  background-color: black;
   left: 3px;
 }
 .submit{
@@ -312,7 +313,7 @@ footer span .tag a:hover {
     }
     .listen-now{
       width: 30vw;
-      font-size: 1.2em;
+      font-size: 1em;
       padding: 15px 5px;
     }
     .image{
