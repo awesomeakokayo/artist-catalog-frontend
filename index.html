@@ -42,8 +42,8 @@
         </div>
         <div class="new-music">
             <h1>BORN AGAIN</h1>
-            <a href="born.html">
-                <button class="listen-now">Listen Now</button>
+            <a target="_blank" href="born.html">
+                <button class="listen-now">LISTEN NOW</button>
             </a>
         </div>
     </div>
@@ -70,7 +70,7 @@
         </div>
         <div class="email-terms">
           <div class="email-input">
-            <input type="email" placeholder="E M A I L">
+            <input type="email" placeholder="EMAIL">
             <button class="submit"><img width="40px" height="40px" src="assets/images/Vector (2).png" alt=""></button>
           </div>
           <div class="terms">
@@ -103,7 +103,7 @@
           <img src="${API_BASE + track.cover_image}" width="100" alt="${track.title}">
           <div class="track-actions">
             <h3 class="track-title">${track.title}</h3>
-            <a class="listen-now" href="track.html?id=${track.id}">Listen Now</a>
+            <a target="_blank" class="listen-now" href="track.html?id=${track.id}">Listen Now</a>
           </div>
         `;
         catalogDiv.appendChild(div);
