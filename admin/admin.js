@@ -121,7 +121,6 @@ async function loadAdminCatalogs() {
                         }" class="catalog-image" alt="${it.title}">
                         <div>
                             <strong>${it.title}</strong> 
-                            <div>${it.description || "No description"}</div>
                         </div>
                         <button data-id='${it.id}' class='del'>Delete</button>
                     `;
