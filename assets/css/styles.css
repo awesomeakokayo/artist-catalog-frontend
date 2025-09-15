@@ -58,7 +58,7 @@
     font-size:0.85rem;
     color:var(--muted)
 }
- /* Admin button */
+
  .admin-link{
     position:fixed;
     right:1rem;

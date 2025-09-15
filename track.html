@@ -40,13 +40,14 @@
 
       const platformsDiv = document.getElementById("platforms");
       platformsDiv.innerHTML = "";
-      for (const [platform, info] of Object.entries(track.links)) {
-        if (!info.url) continue; // skip platforms that have no link
+      for (const [platform, info] of Object.entries(track.links || {})) {
+        if (!info || !info.url) continue;
+
         const row = document.createElement("div");
-        row.className = "platform-row";
+        row.className = "platform-row"; 
 
         const img = document.createElement("img");
-        img.src = API_BASE + info.logo; 
+        img.src = info.logo; 
         img.className = "platform-logo";
 
         const btn = document.createElement("a");
