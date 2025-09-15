@@ -211,30 +211,35 @@ input{
 input::placeholder{
    color: white;
 }
-.tick{
-   appearance: none;
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   width: 20px;
-   height: 20px;
-   margin-right: 10px;
-   background-color: black;
-   border: 1px solid white;
-   cursor: pointer;
+.tick {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; 
+  width: 20px; 
+  height: 20px;
+  background-color: black;
+  border: 1px solid white; 
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
 }
-.tick:checked{
-   background-color: black;
-   content: icon;
-   color: white;
-}
+
 .tick:checked::after {
-  content: "✔";
-  color: black;
-  font-size: 14px;
+  content: "✓";  
+  color: white; 
+  font-size: 20px; 
   position: absolute;
-  top: 0;
-  left: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  font-weight: bold;
 }
+
+.tick:focus {
+  outline-offset: 2px;
+}
+
 .submit{
    border: none;
    border-left: 2px solid white;
