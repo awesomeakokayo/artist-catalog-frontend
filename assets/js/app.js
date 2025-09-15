@@ -13,7 +13,11 @@
         card.className = 'card';
         const img = document.createElement('img');
         img.className = 'cover';
-        img.src = item.cover_image ? API_BASE + item.cover_image : "/static/placeholder.png";
+        if (item.cover_image_data && item.cover_image_mime) {
+          img.src = `data:${item.cover_image_mime};base64,${item.cover_image_data}`;
+        } else {
+          img.src = "/static/placeholder.png";
+        }
 
         img.alt = item.title;
         const h3 = document.createElement('h3');
