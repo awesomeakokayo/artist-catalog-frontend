@@ -27,7 +27,10 @@
       }
       const track = await res.json();
       document.getElementById("track-title").textContent = track.title || "Untitled";
-      document.getElementById("track-cover").src = API_BASE + track.cover_image;
+      document.getElementById("track-cover").src = track.cover_image 
+      ? API_BASE + track.cover_image 
+      : "assets/images/default-cover.png";
+
       // background
       document.body.style.backgroundImage = `url('${API_BASE + track.cover_image}')`;
       document.body.style.backgroundSize = "cover";

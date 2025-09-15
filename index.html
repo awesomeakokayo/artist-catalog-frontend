@@ -93,14 +93,25 @@
     const API_BASE = "https://artist-website-huey.onrender.com"; 
     async function loadCatalogs() {
       const res = await fetch(`${API_BASE}/catalogs/`);
+      if (!res.ok) {
+        console.error("Failed to fetch catalogs");
+        return;
+      }
+
       const items = await res.json();
       const catalogDiv = document.getElementById("catalog");
       catalogDiv.innerHTML = "";
+
       items.forEach(track => {
         const div = document.createElement("div");
         div.className = "track-item";
+
+        let imgSrc = "/static/placeholder.png";
+        if (track.cover_image_data && track.cover_image_mime) {
+          imgSrc = `data:${track.cover_image_mime};base64,${track.cover_image_data}`;
+        }
         div.innerHTML = `
-          <img loading="lazy" src="${API_BASE + track.cover_image}" width="100" alt="${track.title}">
+          <img loading="lazy" src="${imgSrc}" width="100" alt="${track.title}">
           <div class="track-actions">
             <h3 class="track-title">${track.title}</h3>
             <a target="_blank" class="listen-now" href="track.html?id=${track.id}">Listen Now</a>
