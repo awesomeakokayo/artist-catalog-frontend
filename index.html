@@ -106,7 +106,10 @@
         const div = document.createElement("div");
         div.className = "track-item";
 
-        let imgSrc = `data:${track.cover_image_mime};base64,${track.cover_image_data}`;
+        let imgSrc = track.cover_image && track.cover_image.startsWith("http")
+        ? track.cover_image
+        : API_BASE + track.cover_image;
+        
         div.innerHTML = `
           <img loading="lazy" src="${imgSrc}" width="100" alt="${track.title}">
           <div class="track-actions">
