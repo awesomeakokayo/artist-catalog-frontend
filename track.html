@@ -41,14 +41,13 @@
       const platformsDiv = document.getElementById("platforms");
       platformsDiv.innerHTML = "";
       for (const [platform, info] of Object.entries(track.links || {})) {
-        if (!info || !info.url) continue;
-
         const row = document.createElement("div");
         row.className = "platform-row"; 
 
         const img = document.createElement("img");
-        img.src = info.logo; 
+        img.src = API_BASE + info.logo; 
         img.className = "platform-logo";
+        img.alt = platform;
 
         const btn = document.createElement("a");
         btn.href = info.url;
