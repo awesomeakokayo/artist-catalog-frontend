@@ -118,7 +118,7 @@
    background: inherit;
    border: 1px solid white;
    color: white;
-   font-size: 1.1em;
+   font-size: 24px;
    font-weight: 700;
    text-decoration: none;
    cursor: pointer;
@@ -133,11 +133,12 @@
    background: inherit;
    border: 1px solid white;
    color: white;
-   font-size: 1.5em;
+   font-size: 24px;
    font-weight: 700;
    font-style: bold;
    text-decoration: none;
    cursor: pointer;
+   height: 48px;
 }
 .listen-now1:hover{
    background-color: white;
@@ -157,6 +158,7 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
+   margin-top: 2em;
 }
 .track-item img{
    height: 450px;
@@ -165,13 +167,13 @@
 .track-actions{
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
+   align-items: center;
    justify-content: center;
-   text-align: left;
+   text-align: center;
 }
 .track-title{
    margin-top: 0em;
-   font-size: 5em;
+   font-size: 3em;
    margin-bottom: 0.3em;
 }
 footer{
@@ -214,10 +216,10 @@ footer{
    flex-direction: row;
    width: 40%;
    border: 1px solid white;
+   height: 2.4em;
 }
 input{
    width: 100%;
-   height: 100%;
    background: inherit;
    border: none;
    padding: 5px 10px;
@@ -227,6 +229,7 @@ input{
 }
 input::placeholder{
    color: white;
+   font-size: large;
 }
 .tick {
   -webkit-appearance: none;
@@ -239,7 +242,7 @@ input::placeholder{
   cursor: pointer;
   display: inline-block;
   position: relative;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .tick:checked::after {
@@ -260,7 +263,7 @@ input::placeholder{
 .submit{
    border: none;
    border-left: 1px solid white;
-   width: 70px;
+   width: 30px;
    background: inherit;
 }
 .footer-menu{
@@ -296,6 +299,10 @@ footer span a{
    text-decoration: none;
    color: #65494f;
 }
+.airplane{
+   width: 24px;
+   height: 24px;
+}
 
  @media (max-width:769px){
    .catalog-grid{
@@ -329,6 +336,7 @@ footer span a{
       font-weight: 700;
       text-decoration: none;
       cursor: pointer;
+      height: 30px;
    }
     .track-item{
       width: 85vw;
@@ -345,6 +353,7 @@ footer span a{
       margin-top: 10px;
    }
    .track-item img {
+      margin-top: 1em;
       width: 85vw;
       height: auto;
       margin-right: 0;
@@ -374,11 +383,18 @@ footer span a{
       width: 90vw;
       height: 3em;
    }
+   input{
+      font-size: 11px;
+   }
    .terms{
       margin-top: 2em;
       width: 90vw;
       font-size: 10px;
       font-weight: 700;
+   }
+   .airplane{
+      width: 8.25px;
+      height: 8.25px;
    }
    .email-terms{
       width: 100%;
@@ -387,6 +403,7 @@ footer span a{
       justify-content: center;
       display: flex;
       flex-direction: column;
+      height: 30px;
    }
    .footer{
       padding: 0.8em;
