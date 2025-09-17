@@ -230,13 +230,14 @@ input{
 input::placeholder{
    color: white;
    font-size: large;
+   justify-content: center;
 }
 .tick {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; 
-  width: 20px; 
-  height: 20px;
+  width: 15px; 
+  height: 15px;
   background-color: black;
   border: 1px solid white; 
   cursor: pointer;
@@ -300,8 +301,8 @@ footer span a{
    color: #65494f;
 }
 .airplane{
-   width: 24px;
-   height: 24px;
+   width: 22px;
+   height: 22px;
 }
 
  @media (max-width:769px){
@@ -380,10 +381,16 @@ footer span a{
       background-position: center;
    }
    .email-input{
-      width: 90vw;
+      width: 80vw;
       height: 3em;
    }
    input{
+      font-size: 11px;
+      align-items: center;
+      justify-content: center;
+      width: 80vw;
+   }
+   input::placeholder{
       font-size: 11px;
    }
    .terms{
