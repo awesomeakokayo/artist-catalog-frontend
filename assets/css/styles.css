@@ -425,6 +425,15 @@ footer span a{
       flex-direction: column;
       height: 30px;
    }
+   .nav-bar{
+   height: 8vh;
+}
+.image{
+   height: 84vh;
+}
+.new-music{
+   height: 8vh;
+}
    .footer{
       padding: 0.8em;
       display: flex;
