@@ -334,6 +334,10 @@ footer span a{
       margin-right: 0;
       width: 100%;
    }
+   .track-title{
+      font-size: 31px;
+      text-align: left;
+   }
    .listen-now1{
       padding: 5px 10px;
       background: inherit;
