@@ -214,6 +214,7 @@ footer{
    font-weight: 700;
    height: 100%;
    color: #65494f;
+   margin-bottom: 1em;
 }
 .email-input{
    display: flex;
